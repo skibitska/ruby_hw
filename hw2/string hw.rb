@@ -8,7 +8,8 @@ index = 1
  		index +=1
  		k = index
  	else
- 		result = result + k.to_s + string[i]
+ 		result = result + k.to_s if k > 1
+ 		result = result + string[i]
  		index = 1
   		k = 1
  	end
